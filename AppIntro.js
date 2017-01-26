@@ -394,7 +394,7 @@ AppIntro.propTypes = {
 
 AppIntro.defaultProps = {
   dotColor: 'rgba(255,255,255,.3)',
-  activeDotColor: '#fff',
+  dotBorderColor: '#fff',
   activeDotColor: '#fff',
   activeDotBorderColor: 'rgba(255,255,255,.3)',
   rightTextColor: '#fff',
