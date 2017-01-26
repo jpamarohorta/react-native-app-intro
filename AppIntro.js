@@ -60,8 +60,8 @@ const defaulStyles = {
     width: 13,
     height: 13,
     borderRadius: 7,
-    marginLeft: 7,
-    marginRight: 7,
+    marginLeft: 10,
+    marginRight: 10,
     marginTop: 7,
     marginBottom: 7,
   },
@@ -363,7 +363,9 @@ export default class AppIntro extends Component {
 
 AppIntro.propTypes = {
   dotColor: PropTypes.string,
+  dotBorderColor: PropTypes.string,
   activeDotColor: PropTypes.string,
+  activeBorderColor: PropTypes.string,
   rightTextColor: PropTypes.string,
   leftTextColor: PropTypes.string,
   onSlideChange: PropTypes.func,
