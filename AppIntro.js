@@ -365,7 +365,7 @@ AppIntro.propTypes = {
   dotColor: PropTypes.string,
   dotBorderColor: PropTypes.string,
   activeDotColor: PropTypes.string,
-  activeBorderColor: PropTypes.string,
+  activeDotBorderColor: PropTypes.string,
   rightTextColor: PropTypes.string,
   leftTextColor: PropTypes.string,
   onSlideChange: PropTypes.func,
@@ -395,6 +395,8 @@ AppIntro.propTypes = {
 AppIntro.defaultProps = {
   dotColor: 'rgba(255,255,255,.3)',
   activeDotColor: '#fff',
+  activeDotColor: '#fff',
+  activeDotBorderColor: 'rgba(255,255,255,.3)',
   rightTextColor: '#fff',
   leftTextColor: '#fff',
   pageArray: [],

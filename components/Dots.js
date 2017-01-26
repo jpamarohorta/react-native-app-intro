@@ -5,21 +5,25 @@ import {
 } from 'react-native';
 
 export const Dot = ({
-  styles, dotColor, activeDotColor, active
+  styles, dotColor, dotBorderColor, activeDotColor, activeDotBorderColor, active
 }) => {
   if (active) {
     return (
       <View
-        style={[styles.dotStyle, styles.activeDotStyle, { 
-          backgroundColor: activeDotColor 
+        style={[styles.dotStyle, styles.activeDotStyle, {
+          backgroundColor: activeDotColor,
+          borderWidth: 1,
+          borderColor: activeDotBorderColor
         }]}
       />
     );
   } else {
     return (
-      <View 
-        style={[styles.dotStyle, { 
-          backgroundColor: dotColor
+      <View
+        style={[styles.dotStyle, {
+          backgroundColor: dotColor,
+          borderWidth: 1,
+          borderColor: dotBorderColor
         }]} />
     );
   }
@@ -28,7 +32,7 @@ export const Dot = ({
 export const RenderDots = (index, total, props) => {
   let dots = [];
   for (let i = 0; i < total; i++) {
-    dots.push(React.createElement(Dot, { 
+    dots.push(React.createElement(Dot, {
       ...props,
       key: i,
       active: i === index
